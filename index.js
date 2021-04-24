@@ -77,9 +77,13 @@ function generate(lower, upper, number, symbol, length) {
         });
     }
 
-    const finalPassword
+    const finalPassword = generatedPassword.slice(0, length);
 
-    
+    return finalPassword;
+}
+
+function getRandomLower() {
+    return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
 }
 
 
