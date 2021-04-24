@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color:rgb(225, 238, 241);
+    background-color: #CAF0F8;
     color: white;
     display: flex;
     font-family: "Helvetica Neue", sans-serif;
@@ -29,8 +29,7 @@ input[type="checkbox"] {
 
 .container {
     border-radius:  5px;
-    background-color: rgb(142, 166, 245);
-    box-shadow: 20px 20px 10px rgba(255, 255, 255, 0.2);
+    background-color: #00B4D8;
     padding: 20px;
     width: 350px;
     max-width: 100%;
@@ -72,7 +71,7 @@ input[type="checkbox"] {
     cursor: pointer;
     font-size: 16px;
     padding: 8px 12px;
-    background-color: rgb(63, 97, 245);
+    background-color: #0077B6;
 }
 
 .btn-large {
@@ -95,7 +94,7 @@ input[type="checkbox"] {
 
 #length {
     background-color: rgb(8, 8, 8);
-    border-color:purple;
+    border-color:white;
     border-radius: 4px;
     text-align: center;
     color: white;

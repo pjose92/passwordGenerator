@@ -21,6 +21,7 @@ deleteEl.addEventListener("click", () => {
 
 clipboard.addEventListener("click", () => {
     const textarea = document.createElement("textarea");
+    const password = resultEl.innerText;
 
     if (!password) {
         return;
