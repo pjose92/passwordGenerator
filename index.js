@@ -60,7 +60,7 @@ function generate(lower, upper, number, symbol, length) {
     console.log(typesCount, "typesCount");
 
     const typesArr = [{lower}, {upper}, {number}, {symbol}].filter(
-        item => Object.values(items)[0]
+        item => Object.values(item)[0]
     );
     console.log(typesArr, "typesArr");
 
@@ -72,13 +72,10 @@ function generate(lower, upper, number, symbol, length) {
         typesArr.forEach(type => {
             const funcName = Object.keys(type)[0];
             generatedPassword += randomFunction[funcName]();
-            console.log(randomFunc[funcName], "randomFunc[funcName]");
-            console.log(generatedPassword, "generatedPassword");
         });
     }
 
     const finalPassword = generatedPassword.slice(0, length);
-
     return finalPassword;
 }
 
@@ -98,4 +95,3 @@ function getRandomSymbol() {
     const symbols = "!@#$%^&*(){}[]<>/"
     return symbols[Math.floor(Math.random() * symbols.length)];
 }
-
